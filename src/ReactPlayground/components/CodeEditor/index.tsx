@@ -23,7 +23,7 @@ export default function CodeEditor() {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
             <FileNameList/>
-            <Editor file={file} onChange={debounce(onEditorChange, 500)}/>
+            <Editor file={file} onChange={debounce(onEditorChange, 500)} options={{theme: `vs-${theme}`}}/>
         </div>
     )
 }

@@ -21,7 +21,7 @@ export default function Editor(props: Props) {
         onChange,
         options,
     } = props;
-    debugger
+    
     const handleEditorMount: OnMount = (editor, monaco) => {
 
         editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.KeyJ, () => {
